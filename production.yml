@@ -48,7 +48,7 @@ services:
       context: .
       dockerfile: ./compose/production/Dockerfile
     restart: always
-    command: celery -A app.task worker --loglevel=info
+    command: celery -A app.task worker --loglevel=info -f logs/beat.info
     volumes:
       - ./src:/home/app/web/
       - ./logs:/home/app/web/logs
