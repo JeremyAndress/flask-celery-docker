@@ -61,18 +61,18 @@ services:
       options:
         max-size: "5m"
         max-file: "10"  
-  # beat:
-  #   container_name: beat1
-  #   env_file: .env
-  #   build: 
-  #     context: .
-  #     dockerfile: ./compose/local/Dockerfile
-  #   restart: always
-  #   command: celery -A app.task beat --loglevel=info
-  #   volumes:
-  #     - ./src:/home/app/web/
-  #     - ./logs:/home/app/web/logs
-  #     - /etc/localtime:/etc/localtime:ro
+  beat:
+    container_name: beat1
+    env_file: .env
+    build: 
+      context: .
+      dockerfile: ./compose/local/Dockerfile
+    restart: always
+    command: celery -A app.task beat --loglevel=info
+    volumes:
+      - ./src:/home/app/web/
+      - ./logs:/home/app/web/logs
+      - /etc/localtime:/etc/localtime:ro
     links:
       - redis
     logging:
