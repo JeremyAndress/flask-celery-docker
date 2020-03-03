@@ -12,7 +12,8 @@ class Celery:
     CELERYBEAT_SCHEDULE = {
         'periodic_task-every-minute': {
             'task': 'app.task.periodic',
-            'schedule': crontab(minute=15, hour='15')
+            'schedule': crontab(minute='*')
+            # 'schedule': crontab(minute=15, hour='15')
         }
     }
 
