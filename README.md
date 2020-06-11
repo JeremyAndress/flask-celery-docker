@@ -28,3 +28,6 @@ $ cp .env.example .env
 ```sh
 $ docker-compose -f production.yml build
 ```
+
+
+1.4.6 win
