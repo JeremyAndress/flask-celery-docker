@@ -1,14 +1,14 @@
-# Flask Celery
+# Flask Celery :snake:
 [Link del repositorio](https://github.com/JeremySilvaSilva/Flask-Celery)
 
-Este repositorio cuenta con una implementacion de flask y celery utilizando Factory Method Pattern. Creado como template para el futuro uso de proyectos que necesiten colas de tareas o tareas periodicas. 
+Este repositorio cuenta con una implementacion de flask y celery utilizando Factory Method Pattern. Creado como template para el futuro uso de proyectos que necesiten colas de tareas o tareas periodicas. :mouse2:
 
 ## Dependencias 
-Para hacer funcionar este template es necesario tener las siguientes herramientas instaladas en su maquina. Este template fue generado en un pc Linux, pero gracias al uso de Docker, su funcionamiento debe ser el mismo en maquinas Windows o Mac.
+Para hacer funcionar este template es necesario tener las siguientes herramientas instaladas en su maquina. Este template fue generado en un entorno Fedora, pero gracias al uso de Docker, su funcionamiento debe ser el mismo en maquinas UNIX.
 
-- [Docker] - version 19+
-- [Docker Compose] - version 1.18+
-- [Python] - version 3.5+
+- Docker :whale: - version 19+
+- Docker Compose :whale2: - version 1.18+
+- Python :snake: - version 3.5+
 
 Si deseas conectar la aplicacion con una base de datos mysql sera necesario tener instalado algunos paquetes para el correcto funcionamiento con versiones python 3 en adelante, para instalarlas es necesario el siguiente comando :
 ```sh
