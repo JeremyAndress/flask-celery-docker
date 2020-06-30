@@ -8,7 +8,7 @@ Para hacer funcionar este template es necesario tener las siguientes herramienta
 
 - Docker :whale: - version 19+
 - Docker Compose :whale2: - version 1.18+
-- Python :snake: - version 3.5+
+- Python :snake: - version 3.6+
 
 Si deseas conectar la aplicacion con una base de datos mysql sera necesario tener instalado algunos paquetes para el correcto funcionamiento con versiones python 3 en adelante, para instalarlas es necesario el siguiente comando :
 ```sh
@@ -29,5 +29,3 @@ $ cp .env.example .env
 $ docker-compose -f production.yml build
 ```
 
-
-1.4.6 win
