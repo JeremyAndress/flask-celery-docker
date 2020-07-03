@@ -1,5 +1,5 @@
 # [Flask Celery :snake:](https://github.com/JeremySilvaSilva/Flask-Celery)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JeremySilvaSilva/Flask-Celery/blob/master/LICENSE)
 [![Build Status](https://travis-ci.com/JeremySilvaSilva/Flask-Celery.svg?branch=master)](https://travis-ci.com/JeremySilvaSilva/Flask-Celery)
 
 
