@@ -1,6 +1,7 @@
-# Flask Celery :snake:
+# [Flask Celery :snake:](https://github.com/JeremySilvaSilva/Flask-Celery)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
 [![Build Status](https://travis-ci.com/JeremySilvaSilva/Flask-Celery.svg?branch=master)](https://travis-ci.com/JeremySilvaSilva/Flask-Celery)
-[Link del repositorio](https://github.com/JeremySilvaSilva/Flask-Celery)
+
 
 Este repositorio cuenta con una implementacion de flask y celery utilizando Factory Method Pattern. Creado como template para el futuro uso de proyectos que necesiten colas de tareas o tareas periodicas. :mouse2:
 
