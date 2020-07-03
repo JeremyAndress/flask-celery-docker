@@ -3,7 +3,7 @@ import sys
 from celery.schedules import crontab
 
 class Config:
-    pass
+    JSONIFY_PRETTYPRINT_REGULAR = True
 
 class Celery:
     BROKER_URL = os.getenv('CELERY_BROKER_URL','redis://redis:6379/0')

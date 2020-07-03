@@ -1,24 +1,26 @@
 import os
 import logging
+from logging.handlers import RotatingFileHandler
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LOG_FILENAME_INFO = BASE_DIR+'/logs/info.log'
 
-class LoggingConf:
-    LOG_FILENAME_INFO = BASE_DIR+'/logs/info.log'
-    LOG_FILENAME_ERROR = BASE_DIR+'/logs/error.log'
-    LOG_FILENAME_CRITICAL = BASE_DIR+'/logs/critical.log'
-    FORMAT = '%(asctime)s,%(msecs)05.1f %(message)s'
-    DATEFMT = '%m/%d/%Y %H:%M:%S'
+logging.basicConfig(
+    handlers=[
+        logging.StreamHandler(),
+        RotatingFileHandler(LOG_FILENAME_INFO, maxBytes=20000, backupCount=10)
+    ],
+    level=logging.INFO, 
+    format= '[%(asctime)s] [%(pathname)s:%(lineno)d] [%(levelname)s] - %(message)s',
+    datefmt='%d/%m/%Y %H:%M:%S'
+)
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-fh = logging.FileHandler(LoggingConf.LOG_FILENAME_INFO)
-fh.setLevel(logging.INFO)
-ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
-formatter = logging.Formatter(LoggingConf.FORMAT)
-ch.setFormatter(formatter)
-fh.setFormatter(formatter)
-logger.addHandler(ch)
-logger.addHandler(fh)
+logger = logging.getLogger("launchpad")
+
+def gene_extra(ms):
+    return {
+        'id':str(uuid.uuid4()),
+        'msisdn': ms
+    }
+
 
