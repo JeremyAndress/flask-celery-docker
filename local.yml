@@ -30,7 +30,7 @@ services:
       context: .
       dockerfile: ./compose/local/Dockerfile
     restart: always
-    command: gunicorn wsgi:app -b 0.0.0.0:8011 --log-level=info
+    #command: gunicorn wsgi:app -b 0.0.0.0:8011 --log-level=info
     volumes:
       - ./src:/home/app/web/
       - ./logs:/home/app/web/logs
