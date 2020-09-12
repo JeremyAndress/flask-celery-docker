@@ -1,6 +1,6 @@
 # [Flask Celery :snake:](https://github.com/JeremyAndress/Flask-Celery)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JeremyAndress/Flask-Celery/blob/master/LICENSE)
-[![Build Status](https://travis-ci.com/JeremyAndress/Flask-Celery.svg?branch=master)](https://travis-ci.com/JeremySilvaSilva/Flask-Celery)
+[![Build Status](https://travis-ci.com/JeremyAndress/flask-celery-docker.svg?branch=master)](https://travis-ci.com/JeremySilvaSilva/Flask-Celery)
 
 
 Este repositorio cuenta con una implementacion de flask y celery utilizando Factory Method Pattern. Creado como template para el futuro uso de proyectos que necesiten colas de tareas o tareas periodicas. :mouse2:
